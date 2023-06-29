@@ -1,0 +1,37 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./mario-bg.jpg");
+    background-size: cover;
+}
+#board{
+    width: 540px;
+    height: 540px;
+   /* background-color: green;  instead of this green color we will do a background soil*/
+
+    margin: 0 auto; 
+    display: flex; /* makes sure that the left to right up to down 3x3*/
+    flex-wrap: wrap; /* makes sure that the left to right up to down 3x3*/
+
+    background: url("./soil.png"); /*gives it a soil background instead of green*/
+    background-size: cover; /**/
+    border: 3px solid white; /*make the border  3px thick and white*/
+    border-radius: 25px; /* runded corners of 25px*/
+}
+#board div{
+    /* board = 540x540, dived intto 3x3 tiles  --> 180x180 per div*/
+    width: 180px;
+    height: 180px;
+    background-image: url("./pipe.png");
+    background-size: cover;
+
+}
+
+#board div img
+{
+    /* the mole and the pipe-plant will have this size */
+    width: 100px;
+    height: 100px; /*THis is for the background img size and color */
+
+}
